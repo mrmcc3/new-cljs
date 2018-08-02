@@ -1,12 +1,11 @@
 (ns clj.new.new-cljs
-  (:require [clj.new.templates :refer [renderer project-name name-to-path ->files]]))
-
-(def render (renderer "new-cljs"))
+  (:require [clj.new.templates :as tpl]))
 
 (defn new-cljs [name]
-  (let [data {:name (project-name name)
-              :sanitized (name-to-path name)}]
-    (->files data
+  (let [name (tpl/project-name name)
+        render (tpl/renderer "new-cljs")
+        data {:name name :sanitized (tpl/name-to-path name)}]
+    (tpl/->files data
              ["deps.edn" (render "deps.edn" data)]
              ["shadow-cljs.edn" (render "shadow-cljs.edn" data)]
              ["src/{{sanitized}}/app.cljs" (render "app.cljs" data)]
