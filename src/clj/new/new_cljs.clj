@@ -1,4 +1,4 @@
-(ns clj.new.cljs
+(ns clj.new.new-cljs
   (:require [clj.new.templates :refer [renderer project-name name-to-path ->files]]))
 
 (def render (renderer "cljs"))

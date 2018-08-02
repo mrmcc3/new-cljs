@@ -4,7 +4,7 @@ A minimal clojurescript clj-new template
 
 ## Usage
 
-clj -A:new https://github.com/mrmcc3/new-cljs@SHA project-name
+`clj -A:new https://github.com/mrmcc3/new-cljs@SHA project-name`
 
 ## License
 
