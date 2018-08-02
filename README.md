@@ -4,9 +4,7 @@ A minimal clojurescript clj-new template
 
 ## Usage
 
-`clj -A:new https://github.com/mrmcc3/new-cljs@SHA project-name`
-
-or add to `~/.clojure/deps.edn` aliases
+add to `~/.clojure/deps.edn` aliases
 
 ```clojure
 :aliases {
