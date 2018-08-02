@@ -3,7 +3,7 @@
 
 (def render (renderer "cljs"))
 
-(defn cljs [name]
+(defn new-cljs [name]
   (let [data {:name (project-name name)
               :sanitized (name-to-path name)}]
     (->files data
