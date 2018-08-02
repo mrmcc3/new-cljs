@@ -1,0 +1,8 @@
+{:deps   true
+ :builds {:app {:target     :browser
+                :output-dir "target/app/js"
+                :asset-path "/js"
+                :modules    {:app {:entries [{{name}}.app]}}
+                :devtools   {:autoload  true
+                             :http-root "target/app"
+                             :http-port 8080}}}}
