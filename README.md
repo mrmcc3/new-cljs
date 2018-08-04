@@ -9,7 +9,7 @@ add to `~/.clojure/deps.edn` aliases
 ```clojure
 :aliases {
   :mrmcc3/new-cljs {:extra-deps {seancorfield/clj-new {:git/url "https://github.com/seancorfield/clj-new" :sha "108f27159501f8ce12564b398b0ea50def3892b1"}}
-                    :main-opts ["-m" "clj-new.create" "https://github.com/mrmcc3/new-cljs@f2aa10cfc06f3b90d5ca5d847decbb5a59e7824d"]}
+                    :main-opts ["-m" "clj-new.create" "https://github.com/mrmcc3/new-cljs@bc6f84f5d1f1d88ed0d691e656e13ed6b782f8a6"]}
 }
 ```
 then
