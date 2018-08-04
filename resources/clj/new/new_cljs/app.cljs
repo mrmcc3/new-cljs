@@ -1,3 +1,3 @@
-(ns {{name}}.app)
+(ns {{ns}}.app)
 
 (println "hello")
